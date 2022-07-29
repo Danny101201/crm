@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -28,6 +29,6 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.{js,css,md,ts,tsx}": "prettier --write"
+    "*.{js,css,md,ts,tsx}": "pretty-quick --staged"
   }
 }
