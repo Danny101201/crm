@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "json-server": "json-server JSON_SERVER/db.json "
   },
   "dependencies": {
     "json-server": "^0.17.0",
