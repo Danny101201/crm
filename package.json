@@ -8,16 +8,19 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "json-server": "json-server JSON_SERVER/db.json "
+    "json-server": "json-server JSON_SERVER/db.json  -p 3004",
+    "dev-server": "concurrently  \"npm run dev \" \"npm run json-server\""
   },
   "dependencies": {
     "json-server": "^0.17.0",
     "next": "12.2.3",
+    "qs": "^6.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "18.6.1",
+    "@types/qs": "^6.9.7",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "eslint": "8.20.0",
