@@ -8,8 +8,8 @@ function SearchList({ list, users }: SearchListProps) {
     <table>
       <thead>
         <tr>
-          <td>項目</td>
-          <td>負責人</td>
+          {" "}
+          <td>項目</td> <td>負責人</td>{" "}
         </tr>
       </thead>
       <tbody>
