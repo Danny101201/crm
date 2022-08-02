@@ -6,6 +6,9 @@ type Params = {
 type UserType = {
   name: string;
   id: number;
+  email: string;
+  title: string;
+  organization: string;
 };
 
 interface ListType {

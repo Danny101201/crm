@@ -26,7 +26,7 @@ function SearchComponent() {
   useMount(getUsers);
 
   useEffect(() => {
-    fetch(`${HOST}/projects?${stringify(cleanObj(params))}`).then(
+    fetch(`${HOST}/projects?${stringify(cleanObj(debounceParame))}`).then(
       async (res) => {
         if (res.ok) {
           setList(await res.json());

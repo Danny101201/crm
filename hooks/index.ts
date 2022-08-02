@@ -4,7 +4,7 @@ export const useMount = (cd: Function) => {
     cd();
   }, []);
 };
-export const useDebounce = (value: any, delay: number) => {
+export const useDebounce = <T>(value: T, delay: number) => {
   const [debouncevalue, setDebouncevalue] = useState(value);
 
   useEffect(() => {
